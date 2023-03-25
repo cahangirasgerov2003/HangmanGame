@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+.header-container {
+  background-image: linear-gradient(
+    #378dbc 0%,
+    #b6e8f1 46%,
+    #fff 50%,
+    #32120e 54%,
+    #ffc488 58%,
+    #582c11 90%,
+    #ec9b4e 100%
+  );
+}
+.game-name {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 200px;
+  font-style: italic;
+  letter-spacing: 3px;
+  position: relative;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 5px;
+}
+.light {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    -40deg,
+    transparent 0%,
+    transparent 40%,
+    #fff 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  background-position: -700px 0;
+  background-repeat: repeat;
+}
+.game-history {
+  position: absolute;
+  left: 30%;
+  top: 120px;
+  font-size: 160px;
+  font-family: "Mr Dafoe", cursive;
+  color: #f975f7;
+  transform: rotate(-15deg);
+  -webkit-text-stroke: 5px #f008b7;
+  filter: drop-shadow(5px 0.5px 30px #f008b7);
+}
+.game-state {
+  width: 354px;
+  height: 804px;
+  padding: 20px;
+  margin-bottom: 50px;
+  border: 7px dashed #fff;
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.main-container {
+  margin-top: 120px;
+}
+.game-state p {
+  margin: 20px 0 20px 0;
+}
+.information-text {
+  width: 354px;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #f008b7;
+}
+@media only screen and (max-width: 992px) {
+  .game-name {
+    font-size: 150px;
+  }
+  .game-history {
+    font-size: 120px;
+    top: 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .game-name {
+    font-size: 100px;
+  }
+  .game-history {
+    font-size: 80px;
+    top: 60px;
+  }
+}
